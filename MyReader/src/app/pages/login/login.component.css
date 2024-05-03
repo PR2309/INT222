@@ -1,0 +1,35 @@
+img{
+  z-index: -10;
+  opacity:  .25;
+  max-width: 50px;
+  min-height: 50px;
+}
+
+.dot:hover {
+  scale: 1.2;
+  transition-duration: 20s;
+}
+.dot {
+  transform: translateY(7px) rotate(180deg);
+}
+
+.container-fluid {
+  background-image: url("https://source.unsplash.com/random/?flower");
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
+  background-position: center;
+  border-bottom: 10px;
+}
+
+.ele {
+  z-index: 1;
+  opacity: 110;
+  background-color: rgba(255, 255, 255, 0.681);
+  width: 400px;
+  height: 500px;
+}
+
+input::placeholder, label{
+  font-size: 0.8em;
+}

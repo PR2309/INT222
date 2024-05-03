@@ -1,0 +1,65 @@
+
+img{
+  height: 40vh;
+  border: 10px;
+}
+
+#pg{
+  background-color: rgb(211, 203, 203);
+}
+
+.card {
+  background-color: rgba(245, 245, 245, 0.541);
+}
+
+.card .container{
+  background-color: rgba(245, 245, 245, 0.541);
+}
+
+.card:hover{
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 2px 2px;
+}
+  
+.image:hover{
+  filter:blur(3px);
+  transition: .5s;
+  box-shadow: 1.5rem;
+  scale: 5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card-container {
+  position: relative;
+}
+
+.image-button {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: transparent; 
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.cover{
+  display: none;
+}
+
+.container:hover > .cover{
+  display: block;
+}
+
+#win {
+  background-size: cover;
+  z-index: -1;
+  background-position: center;
+  border-bottom: 10px;
+}

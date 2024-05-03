@@ -1,0 +1,29 @@
+<div id="win" class="vh-99 overflow-x-hidden" id="pg">
+    <app-navbar></app-navbar>
+    <div class="ele container">
+        <div class="container pt-4">
+            <div class="row">
+              <div class="col-md-3 mb-4"  *ngFor="let tech of techs">
+                <div class="card container shadow py-2" title="{{tech.title}}">
+                    <img [src]="tech.imageUrl" class="image card-img-top shadow rounded" [alt]="tech.title">
+                    <div class="cover">
+                    <a [href]="tech.pdfUrl" target="_blank">
+                    <button id="book1" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">{{tech.title}}</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">{{tech.author}}</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">{{tech.publish}}</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">{{tech.format}}</code></span><br/>
+                      <span><b>Subject: </b><code class="text-dark">{{tech.subject}}</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+</div>
+</div>
+<div class="pt-10"><app-footer></app-footer></div>

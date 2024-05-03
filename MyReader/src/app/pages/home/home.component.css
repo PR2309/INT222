@@ -1,0 +1,142 @@
+* {
+    text-align: center;
+  }
+  
+#pg{
+  background-color: rgb(211, 203, 203);
+}
+  .heading {
+    background-image: url("../../../assets/images/cover.jpg");
+    background-size: cover;
+    text-shadow: 100px white;
+    text-wrap: nowrap;
+    background-position: center;
+    filter: blur(0.9);
+  }
+
+  #top1{
+    color:rgba(0, 0, 0, 0.953);
+  }
+  
+  .ele {
+    z-index: 1;
+    opacity: 100;
+    background-color:none;
+  }
+  .parts.text-center{
+    font-size: 2em;
+    color:black;
+    font-family: "Dancing Script",cursive !important;
+  }
+#nov{
+  margin-top:2%;
+  border:2px solid antiquewhite;
+  border-radius: 10px;
+  padding-bottom: 2% !important;
+}
+  #no1{
+    position: relative;
+    left:-3rem;
+  }
+  .search-field{
+    border: none;
+    height: 2rem;
+    width: 20rem;
+    text-align: left;
+    padding: 12px;
+  }
+
+
+/* Cards */
+
+img{
+  height: 20vh;
+  border: 10px;
+}
+
+
+
+#gif{
+  height: 50vh;
+  border: none;
+  filter: invert(0%);
+  position: left top;  
+}
+
+.card:hover{
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 2px 2px;
+}
+
+.image:hover + .image-button{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);  }
+  
+.image:hover{
+  filter: invert(100%) blur(3px);
+  transition: .5s;
+  box-shadow: 1.5rem;
+  scale: 5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card-container {
+  position: relative;
+}
+
+.image-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: transparent; 
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.image-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/***********************************************************/
+
+
+.parts{
+  color: rgb(152, 152, 152);
+  text-align: left;
+  padding-left: 20px;
+}
+p{
+  text-align:left;
+  padding-left: 50px;
+  margin-left: 50px;
+  padding: 45px;
+}
+.div1{
+  background-color: beige;
+  border-radius: 15px;}
+
+
+  /**********************************************************/
+
+  button.search{
+    border: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px 4px 10px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+  }
+
+  button{
+    margin-top: 0px;
+  }

@@ -1,0 +1,55 @@
+<div class="vh-99 overflow-x-hidden" id="pg">
+    <app-navbar></app-navbar>
+    <!-- <app-search/> -->
+    <div class="container align-items-center">
+      <!-- <ul>
+        <li *ngFor="let music of musics">
+          <a routerLink="/music/{{music.id}}">
+            <img [src]="music.imageUrl" [alt]="music.name">
+            <div class="content">
+              <div class="name">{{music.name}}</div>
+              <span class="favourite {{music.favorite?'':'not'}}">❤</span>
+            <div class="product-item-footer">
+              <div class="origins">
+                <span *ngFor="let origin of music.origins">
+                {{origin}}
+              </span>
+              </div>
+              
+            </div>
+            </div>
+          </a>
+        </li>
+      </ul> -->
+    
+
+
+
+
+      <div class="container pt-4">
+      <div class="row">
+        <div class="col-md-3 mb-4" *ngFor="let music of musics">
+          <div class="card container shadow py-2" title={{music.title}}>
+            <img [src]="music.imageUrl" class="image card-img-top shadow rounded" [alt]="music.title">
+            <!-- <img src={manga.img} class="image card-img-top shadow rounded" alt="Spy x Family"> -->
+            <a [href]="music.pdfUrl" target="_blank">
+              <button id="novel1" class="image-button rounded-circle py-3">▶</button>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{music.title}}</h5>
+              <p class="card-text">
+                <b>Author: </b><code class="text-dark">{{music.author}}</code><br />
+                <b>Published On: </b><code class="text-dark">{{music.publish}}</code><br />
+                <b>Status: </b><code class="text-dark">Ongoing</code><br />
+                <b>Language: </b><code class="text-dark">{{music.language}}</code><br />
+                <b>Origin: </b><code class="text-dark">{{music.origin}}</code><br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+</div>
+<div class="pt-10"><app-footer></app-footer></div>

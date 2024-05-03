@@ -1,0 +1,11 @@
+#win{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(211, 203, 203);
+}
+
+img{
+    margin-left: 1.2rem;
+}

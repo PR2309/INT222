@@ -1,0 +1,128 @@
+#pg{
+    background-color: rgb(211, 203, 203);
+  }
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+li a{
+  text-decoration: none;
+
+  height: 22.5rem;
+  width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin:0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color:rgb(17, 18, 18);
+}
+
+li a:hover{
+  opacity:0.9;
+  cursor: pointer;
+}
+
+li a img{
+  object-fit: cover;
+  height : 14.5 rem;
+}
+.content{
+  margin-top:0.3rem;
+  padding: 0.5rem 1rem;
+  position:relative;
+  height:7rem;
+}
+.favourite{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: red;
+}
+.favourite.not{
+  color: grey;
+}
+
+/***********************************************************/
+
+
+img{
+  height: 40vh;
+  border: 10px;
+  /* border-radius: 5px; */
+  /* border-end-end-radius: 4px;
+  border-start-end-radius: 4px; */
+}
+
+#pg{
+  background-color: rgb(211, 203, 203);
+}
+
+.card {
+  background-color: rgba(245, 245, 245, 0.541);
+}
+
+.card .container{
+  background-color: rgba(245, 245, 245, 0.541);
+}
+
+.card:hover{
+  /* scale:1.5rem; */
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 2px 2px;
+}
+
+.image:hover + .image-button{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);  }
+  
+.image:hover{
+  filter:blur(3px);
+  /* opacity: 0.7; */
+  transition: .5s;
+  box-shadow: 1.5rem;
+  scale: 5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.card-container {
+  position: relative;
+}
+
+.image-button {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: transparent; 
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.image-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#win {
+  background-size: cover;
+  /* opacity: 0.80; */
+  z-index: -1;
+  background-position: center;
+  border-bottom: 10px;
+}
+

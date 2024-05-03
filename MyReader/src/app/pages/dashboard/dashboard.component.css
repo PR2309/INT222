@@ -1,0 +1,24 @@
+img{
+    padding:0px 20ox 0px 20px ;
+}
+.div1{
+    top:30%;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.div0{
+    border-radius: 15px;
+    border: solid 1px rgba(24, 23, 23, 0.726);
+    box-shadow:10px;
+    padding: 30px;
+    box-shadow: 3px 3px 10px 10px rgba(0, 0, 0, 0.684);
+    background-color: rgba(250, 235, 215, 0.8);
+}
+#pg{
+    background-color: rgb(211, 203, 203);
+    background-image: url(../../../assets/images/dash.jpg);
+    padding-bottom: 77px;
+
+    
+}

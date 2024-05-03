@@ -1,0 +1,30 @@
+ /* Element Font*/
+  
+ @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
+  
+ * {
+    font-family: "Piazzolla", serif  !important;
+    font-family: poppins !important;
+    box-sizing: border-box;
+  }
+  
+  /************************************************************* */
+
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer{
+  z-index: -100;
+  margin-top: auto;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

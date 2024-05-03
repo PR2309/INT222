@@ -1,0 +1,32 @@
+
+input {
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 2rem;
+  width: 15rem;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+div button {
+  color: grey;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: #e72962;
+  color: white;
+  opacity: 0.8;
+  outline: none;
+}
+div button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+input::placeholder{
+  font-size: 0.8em;
+}

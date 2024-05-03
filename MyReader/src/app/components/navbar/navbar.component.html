@@ -1,0 +1,73 @@
+<nav class="navbar p-4 py-2 d-flex flex-row items-center justify-content-between">
+  <img id="full_logo" src="../../../assets/images/full_logo.png" alt="Logo">
+  <img id="short_logo" src="../../../assets/images/short_logo.png" alt="Logo">
+
+  <div class="div1 d-flex gap-3 borderXwidth">
+    <a id="opt1" class="opt btn btn-info text-dark mt-3 mb-3" routerLink="/home" routerLinkActive="active"
+      ariaCurrentWhenActive="page">Home</a>
+    <a id="opt2" class="opt btn btn-info text-dark mt-3 mb-3" routerLink="/novels" routerLinkActive="active"
+      ariaCurrentWhenActive="page">Novels</a>
+    <a id="opt3" class="opt btn btn-info text-dark mt-3 mb-3" routerLink="/manga" routerLinkActive="active"
+      ariaCurrentWhenActive="page">Manga</a>
+    <a id="opt4" class="opt btn btn-info text-dark mt-3 mb-3" routerLink="/study" routerLinkActive="active"
+      ariaCurrentWhenActive="page">Studies</a>
+    <a id="opt5" class="opt btn btn-info text-dark mt-3 mb-3" routerLink="/all" routerLinkActive="active"
+      ariaCurrentWhenActive="page">All</a>
+    <a id="opt6" class="opt btn btn-info text-dark mt-3 mb-3" routerLink="/about" routerLinkActive="active"
+      ariaCurrentWhenActive="page">About Us</a>
+    <!-- <a id="opt7" class="opt btn btn-info text-light" routerLink="/dash" routerLinkActive="active" ariaCurrentWhenActive="page" -->
+    <a id="opt7" class="opt btn btn-info text-dark mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a>
+    <!-- <a id="opt8" class="opt btn btn-info text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a> -->
+    <app-search/>
+  </div>
+
+  <div class="p-2">
+    <input type="checkbox" id="toggle">
+    <label class="hamburger" for="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+
+    <nav class="menu">
+      <ul class="vh-99">
+        <li><a id="op1" class="op text-center" routerLink="/home" routerLinkActive="active"
+            ariaCurrentWhenActive="page">Home</a></li>
+        <li><a id="op2" class="op text-center" routerLink="/novels" routerLinkActive="active"
+            ariaCurrentWhenActive="page">Novels</a></li>
+        <li><a id="op3" class="op text-center" routerLink="/manga" routerLinkActive="active"
+            ariaCurrentWhenActive="page">Manga</a></li>
+        <li><a id="op4" class="op text-center" routerLink="/study" routerLinkActive="active"
+            ariaCurrentWhenActive="page">Studies</a></li>
+        <li><a id="op5" class="op text-center" routerLink="/all" routerLinkActive="active"
+            ariaCurrentWhenActive="page">All</a></li>
+        <li><a id="op6" class="op text-center" routerLink="/about" routerLinkActive="active"
+            ariaCurrentWhenActive="page">About Us</a></li>
+        <!-- <li><a id="op7" class="op text-center" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"  -->
+        <li><a id="op7" class="op text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Log Out</a></li>
+        <!-- <li><a id="op8" class="op text-center" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a></li> -->
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="../../../assets/images/logout.png" alt="" height="30px">
+        <h2 class="modal-title" id="exampleModalLabel">&nbsp;Log Out</h2>
+        <button class="btn-close px-3" data-bs-dismiss="modal" aria-label="Cancel"></button>
+      </div>
+      <div class="modal-body text-danger">
+        <p>Are you sure? You want to log out</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-danger" data-bs-dismiss="modal" routerLink="/dash" routerLinkActive="active"
+          ariaCurrentWhenActive="page">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>

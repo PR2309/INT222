@@ -1,0 +1,127 @@
+<div class="vh-99 overflow-x-hidden" id="pg">
+    <app-navbar></app-navbar>
+    <div class="container-fluid px-0 py-0">
+        <div class="heading text-light">
+            <br /><br /><br />
+            <div class="container align-items-center" id="top1"><br />
+                <h1 class="display-2"><br />Welcome to My Reader<br /></h1><br />
+                <h5>
+                    <pre><i>Discover the Joy of Reading</i></pre><br />
+                </h5>
+            </div>
+            <div class="mt-3 container px-5 flex-row">
+                <!-- <input type="search" class="search-field rounded-5" name="search" placeholder="Search your book here">
+                &nbsp;
+                <label for="search"><button class="search">⌕</button></label>
+                <br /><br /> -->
+                <app-search></app-search>
+            </div>
+            <br /><br /><br /><br />
+        </div>
+        <!-- https://source.unsplash.com/random/1560x480/?nature -->
+        <br/><br/>
+
+        <div class="ele container py-10 mt-3 md-3">
+            <h2>Every Book is a Journey.</h2>
+            <h5>Let's start one</h5>
+            <div class="container py-5 px-5 pt-4">
+                <div class="row">
+                    <div class="col-md-3 mb-0">
+                        <div class="card shadow" title="Novels">
+                            <a routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                <img src="../../../assets/images/Novel.jpg" class="image card-img-top shadow rounded"
+                                    alt="Novels">
+                                <button class="image-button rounded-circle py-3">Novels</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-0">
+                        <div class="card shadow" title="Studies">
+                            <a routerLink="/study" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                <img src="../../../assets/images/Study.jpg" class="image card-img-top shadow rounded"
+                                    alt="studies">
+                                <button class="image-button rounded-circle py-3">Studies</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-0">
+                        <div class="card shadow" title="Manga">
+                            <a routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                <img src="../../../assets/images/Manga.jpg" class="image card-img-top shadow rounded"
+                                    alt="Manga">
+                                <button class="image-button rounded-circle py-3">Manga</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <div class="card shadow" title="page">
+                            <a routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                <img src="../../../assets/images/Novels.jpg" class="image card-img-top shadow rounded"
+                                    alt="Novels">
+                                <button class="image-button rounded-circle py-3">▶</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="container p-10 mb-5">
+            <hr class="py-4">
+            <section class="div1 container d-flex">
+                <img id="gif" src="../../../assets/images/Reader.gif"><br>
+                <div class="align-items-center d-flex justify-content-center flex-column">
+                    <h4><b>This website is looking for passionate reader who love to explore the different worlds of
+                            books,<br />
+                            away from the reality sometimes into fiction, sometimes into drama,<br />
+                            sometimes into horror and so on.<br /><br /><br /></b></h4>
+                    <h4>We have a variety of books here, come let's dive into the library of books you may like and
+                        love. </h4>
+                </div>
+            </section>
+            <section class="container p-0 pt-5" id="nov">
+                <h5 class="parts text-center">Novels</h5>
+                <p class="container p-0 px-5 text-center" id="no1">
+                    Here we have a bunch of novels waiting to whisk you away on unforgettable journeys. If you're a fan
+                    of captivating stories that transport you to new worlds and keep you turning pages late into the
+                    night, then you're in the right place. From gripping thrillers that will leave you on the edge of
+                    your seat to heartwarming romances that will tug at your heartstrings, our collection has something
+                    for every reader. Each novel is a doorway to adventure, offering you the chance to escape reality
+                    and immerse yourself in tales of love, mystery, and intrigue. Dive into our selection of novels and 
+                    discover the magic of storytelling today.</p>
+                <button class="btn btn-block btn-primary shadow-md" routerLink="/novels" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Explore</button><br />
+
+            </section>
+            <section class="container p-0 pt-5" id="nov">
+                <h5 class="parts text-center">Manga</h5>
+                <p class="container p-0 px-5 text-center" id="no1">
+                    Step into a world of endless possibilities with our captivating manga collection. Whether you crave
+                    adrenaline-fueled action or heartwarming romance, our diverse selection has something to satisfy
+                    every manga enthusiast. Immerse yourself in dynamic characters, intricate plots, and breathtaking
+                    artwork that will transport you to realms beyond imagination. With each manga, you'll embark on an
+                    unforgettable journey filled with excitement, emotion, and adventure. So why not pick up a volume
+                    and experience the magic of manga for yourself? Join us as we explore the extraordinary world of
+                    storytelling through manga. Let your imagination soar with every page.</p><br />
+                <button class="btn btn-block btn-primary shadow-md" routerLink="/manga" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Explore</button>
+
+            </section>
+            <section class="container p-0 pt-5" id="nov">
+                <h5 class="parts text-center">Studies</h5>
+                <p class="container p-0 px-5 text-center" id="no1">
+                    Enter the realm of knowledge and academic enrichment with our meticulously curated collection of
+                    study materials. From comprehensive textbooks to insightful study guides, each book serves as a
+                    portal to deeper understanding and mastery of various subjects. Dive into our medium-sized library
+                    and embark on a journey of exploration as you engage with complex concepts and expand your knowledge
+                    horizons. Whether you're preparing for exams or seeking to enhance your understanding, our study
+                    books provide the tools you need to succeed in your educational pursuits. Join us as we delve into
+                    the world of learning and discovery through the power of books.</p>
+                <button class="btn btn-block btn-primary shadow-md" routerLink="/study" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Explore</button>
+
+            </section>
+            <br><br><br><br><br>
+        </main>
+    </div>
+</div>
+<div><app-footer></app-footer></div>

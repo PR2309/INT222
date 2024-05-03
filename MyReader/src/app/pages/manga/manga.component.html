@@ -1,0 +1,30 @@
+<div id="win" class="vh-99 overflow-x-hidden" id="pg">
+  <app-navbar></app-navbar>
+  <div class="ele container">
+      <div class="container pt-4">
+          <div class="row">
+            <div class="col-md-3 mb-4" *ngFor="let manga of mangas">
+              <div class="card container shadow py-2" title={{manga.title}}>                  
+                  <img [src]="manga.imageUrl" class="image card-img-top shadow rounded" alt={{manga.title}}>
+                  <div class="cover">
+                  <a [href]="manga.pdfUrl" target="_blank">
+                  <button id="novel1" class="image-button rounded-circle py-3">▶</button>
+                  </a>
+                  </div>
+                  <div class="card-body">
+                  <h5 class="card-title">{{manga.title}}</h5>
+                  <p class="card-text">
+                    <b>Author: </b><code class="text-dark">{{manga.author}}</code><br/>
+                    <b>Published On: </b><code class="text-dark">{{manga.publish}}</code><br/>
+                    <b>Status: </b><code class="text-dark">{{manga.status}}</code><br/>
+                    <b>Language: </b><code class="text-dark">{{manga.language}}</code><br/>
+                    <b>Origin: </b><code class="text-dark">{{manga.origin}}</code><br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+</div>
+<div class="pt-10"><app-footer></app-footer></div>

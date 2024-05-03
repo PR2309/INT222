@@ -1,0 +1,29 @@
+<div id="win" class="vh-99 overflow-x-hidden" id="pg">
+    <app-navbar></app-navbar>
+    <div class="ele container">
+        <div class="container pt-4">
+            <div class="row">
+              <div class="col-md-3 mb-4" *ngFor="let novel of novels">
+                <div class="card container shadow py-2" title="{{novel.title}}">
+                    <img [src]="novel.imageUrl" class="image card-img-top shadow rounded" [alt]="novel.title">
+                    <div class="cover">
+                    <a [href]="novel.pdfUrl" target="_blank">
+                    <button id="novel1" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">{{novel.title}}</h5>
+                    <p class="card-text">
+                      <b>Author: </b><code class="text-dark">{{novel.author}}</code><br/>
+                      <b>Publication On: </b><code class="text-dark">{{novel.publish}}</code><br/>
+                      <b>Format: </b><code class="text-dark">{{novel.format}}</code><br/>
+                      <b>Language: </b><code class="text-dark">{{novel.language}}</code><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+</div>
+</div>
+<div class="pt-10"><app-footer></app-footer></div>
